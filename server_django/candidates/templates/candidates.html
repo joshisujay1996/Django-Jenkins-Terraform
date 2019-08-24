@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Joogle, Inc
+        </title>
+    </head>
+    <body>
+        <h1>Below are the cnadidates</h1>
+        <ul>
+                    {% for candidate in candidates %}
+                    <li>
+                            {{candidate}}
+                    </li>
+                    {% endfor %}
+        </ul>
+    </body>
+    </html>
