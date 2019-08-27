@@ -25,10 +25,6 @@ class HomePageTest(SimpleTestCase):
         response = self.client.get('/')
         self.assertNotContains(
             response, 'My webpage does not contain all these')
-    def test_view_uses_correct_template(self):
-        response = self.client.get(reverse('index'))
-        self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'index.html')
 
 # Below is test case for sending data on to the database and
 #  checking if got the same
