@@ -5,10 +5,9 @@ python:
     
 install:
   - pip install -r req.txt
-  - pip install .
 
 script:
-  - python server_django/manage.py test
+  - python server_django/manage.py test jobs
 
 branches:
   only:
